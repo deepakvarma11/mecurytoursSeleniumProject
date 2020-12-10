@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.mindtree.mercurytours.utility.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="Test(failed)">
+    <classes>
+      <class name="com.mindtree.mercurytours.testscases.BookingReturnFlight">
+        <methods>
+          <include name="setBeforeTest"/>
+          <include name="invokeBrowser"/>
+          <include name="selectFlight"/>
+          <include name="savingPdfFile"/>
+          <include name="setAfterClass"/>
+          <include name="bookReturnFlight" invocation-numbers="0"/>
+          <include name="setBeforeSuite"/>
+          <include name="setAfterSuite"/>
+          <include name="demoautLoginTest"/>
+        </methods>
+      </class> <!-- com.mindtree.mercurytours.testscases.BookingReturnFlight -->
+      <class name="com.mindtree.mercurytours.testscases.ValidatingLoginCredentials">
+        <methods>
+          <include name="setAfterMethod"/>
+          <include name="setBeforeTest"/>
+          <include name="invokeBrowser"/>
+          <include name="validatingUserCredentials"/>
+          <include name="savingPdfFile"/>
+          <include name="setAfterClass"/>
+          <include name="setBeforeSuite"/>
+          <include name="setAfterSuite"/>
+          <include name="setBeforeMethod"/>
+        </methods>
+      </class> <!-- com.mindtree.mercurytours.testscases.ValidatingLoginCredentials -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
